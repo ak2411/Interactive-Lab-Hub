@@ -35,7 +35,7 @@ disp = st7789.ST7789(
 height = disp.height  # we swap height/width to rotate it to landscape!
 width = disp.width
 image = Image.new("RGB", (width, height))
-rotation = 90
+rotation = 0
 
 cube_dimension = 3
 
@@ -43,7 +43,7 @@ cube_dimension = 3
 draw = ImageDraw.Draw(image)
 
 # Draw a black filled box to clear the image.
-draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+draw.rectangle((0, 0, height, width), outline=0, fill=(0, 0, 0))
 disp.image(image, rotation)
 # Draw some shapes.
 # First define some constants to allow easy resizing of shapes.
@@ -70,7 +70,7 @@ y_origin = 0
 while True:
     # Reset once you reach midnight
     if(ctr == 1439):
-        draw.rectangle((0, 0, width, height), outline=0, fill=0)
+        draw.rectangle((0, 0, height, width), outline=0, fill=0)
         x_origin = 0
         y_origin = 0
 
