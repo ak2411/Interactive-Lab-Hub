@@ -193,7 +193,7 @@ After that, Git will ask you to login to your GitHub account to push the updates
 
 Google link: https://drive.google.com/file/d/14ua_zvcE_4WvB5Wg-psT8GWbWuiTW6uw/view?usp=sharing
 
-
+**NOTE: PLAY WITH SOUND ON!**
 https://user-images.githubusercontent.com/18011694/134099428-2e536f4f-fb96-4673-ba58-03227d74d07b.mp4
 
 ## Part G. 
