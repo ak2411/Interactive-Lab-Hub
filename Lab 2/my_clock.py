@@ -71,9 +71,9 @@ class state(Enum):
     POSITIVE = 1
     NEGATIVE = 2
 
-negativePositive = ["red", "#481131", "#20222F", "#0234A7", "#0397FD"]
+negativePositive = ["#E5021D", "#481131", "#20222F", "#0234A7", "#0397FD"]
 normalPositive = ["#FFFFFF", "#D4EBF3", "#89DBF4", "#0397FD"]
-normalNegative = ["#FFFFFF", "#FFE303", "#FF6D02", "red"]
+normalNegative = ["#FFFFFF", "#FFE303", "#FF6D02", "#E5021D"]
 
 currState = state.NORMAL
 moments = []
@@ -111,8 +111,8 @@ def getColor(currPos, totalLength, priorState, stateNow):
             colorArray = normalNegative[::-1]
         elif stateNow == state.POSITIVE:
             colorArray = negativePositive
-    print(str(currPos) + " " + str(len(colorArray)) + " " + str(int(currPos/len(colorArray))))
-    return colorArray[int(currPos/len(colorArray))]
+    # print(str(currPos) + " " + str(len(colorArray)) + " " + str(int(currPos/len(colorArray))))
+    return colorArray[int((currPos/totalLength) * (len(colorArray)-1))]
 
 while True:
     # Reset once you reach midnight
@@ -152,7 +152,7 @@ while True:
     elif currState == state.POSITIVE:
         color = "#0397FD"
     elif currState == state.NEGATIVE:
-        color = "E5021D"
+        color = "#E5021D"
 
     # Draw cube
     if time.time()-oldTime >= 1:
