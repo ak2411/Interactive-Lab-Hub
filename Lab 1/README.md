@@ -68,24 +68,27 @@ _Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening th
 
 The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
 
-\*\***Describe your setting, players, activity and goals here.**\*\*
+* **Setting**: At Home
+* **Players**: Person who lives alone usually. Person could have people visiting
+* **Activity**: The person just arrived home from work and is too lazy to do anything.
+* **Goals**: The device's goal is to make the user complete their tasks
 
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
 
-\*\***Include a picture of your storyboard here**\*\*
+
+![IMG_5094](https://user-images.githubusercontent.com/18011694/134108122-aeb9556e-4af1-4093-b4cd-47e176b50b5f.JPG)
+
 
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 
-\*\***Summarize feedback you got here.**\*\*
+**No feedback since joined the class later**
 
 
 ## Part B. Act out the Interaction
 
 Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
 
-\*\***Are there things that seemed better on paper than acted out?**\*\*
-
-\*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
+Its easier to act out the movements physically but explaining the colors and how exactly the glow would work is better on paper
 
 
 ## Part C. Prototype the device
@@ -98,17 +101,17 @@ We invented this tool for this lab!
 
 If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
 
-\*\***Give us feedback on Tinkerbelle.**\*\*
+easy to use!
 
 
 ## Part D. Wizard the device
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
 
-\*\***Include your first attempts at recording the set-up video here.**\*\*
+i needed a camera, so i decided to record with my laptop and use the iphone as the candle and the ipad as the controller
 
 Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
 
-\*\***Show the follow-up work here.**\*\*
+
 
 
 ## Part E. Costume the device
@@ -117,16 +120,26 @@ Only now should you start worrying about what the device should look like. Devel
 
 Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
 
-\*\***Include sketches of what your device might look like here.**\*\*
 
-\*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
+![IMG_5095](https://user-images.githubusercontent.com/18011694/134109562-f72a0c86-aba8-4a48-b3a0-d76862511b87.JPG)
 
+
+![IMG_5096](https://user-images.githubusercontent.com/18011694/134109592-a767fc74-b246-4ebc-ad1d-30f5d6bfb7e0.JPG)
+
+
+size of the phone, size of a typical candle, how can i inform the user that its not just any candle but a ***smart*** candle?
 
 ## Part F. Record
 
-\*\***Take a video of your prototyped interaction.**\*\*
 
-\*\***Please indicate anyone you collaborated with on this Lab.**\*\*
+
+https://user-images.githubusercontent.com/18011694/134111945-a0a73b5b-8163-464a-ae31-a66c2604da58.mp4
+
+
+
+idea of water container on top of phone came from camping life hacks
+ended up placing the phone over a transluscent candle since it shows the brightest
+
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
 
 
