@@ -198,6 +198,18 @@ Google link: https://drive.google.com/file/d/14ua_zvcE_4WvB5Wg-psT8GWbWuiTW6uw/v
 
 https://user-images.githubusercontent.com/18011694/134099428-2e536f4f-fb96-4673-ba58-03227d74d07b.mp4
 
+
+This is the MOMENT clock
+It tells time by drawing a square for every minute you spend
+Just like life, you can add color to it by experiencing different emotions in that moment.
+A button on the bottom left lets you toggle what state you are currently in - positive, normal, or negative. 
+And the right button confirms your state
+
+Every time you change your emotional state, the cubes’ color changes into a gradient from your prior state’s color to your current state’s color. 
+
+At the end of the day, you can stop to review the 1440 minutes you spent in moments and once the clock hits 1440 minutes, I.e. 24 hrs, it resets and signals a new day full of possibilities!
+
+
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
 
