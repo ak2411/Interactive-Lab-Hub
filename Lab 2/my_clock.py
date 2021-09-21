@@ -122,7 +122,6 @@ while True:
 
     # Check for button register
     if not b23.value:
-        print("b23 pressed")
         confirm = False
         # pause program and determine color
         if currState == state.NORMAL:
@@ -131,6 +130,7 @@ while True:
             currState = state.NEGATIVE
         elif currState == state.NEGATIVE:
             currState = state.NORMAL
+        print("switch state to: " + str(currState))
     if not b24.value:
         print("b24 pressed")
         if(len(moments) == 0):
