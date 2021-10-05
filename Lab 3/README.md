@@ -99,13 +99,41 @@ From a remote browser on the same network, check to make sure your webserver is 
 
 ### Storyboard
 
-Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stuck? Make a device that talks for dogs. If that is too stupid, find an application that is better than that.) 
+Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stuck? Make a device that talks for dogs. If that is too stupid, find an application that is better than that.) Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
 
-\*\***Post your storyboard and diagram here.**\*\*
+**Teammates: Grace Le and Evan Lin**
+We were interested in creating a speech-enabled device that isn't an _assistant_. We felt like voice assistants or just our smartphones in general are too kind - they would remind us to do the dishes, but would let it go if we don't do so; they would ask us to sleep, or set off screentime limits, but would let us continue to use our phone if we wanted to. Sometimes, what people need may not be nudges but forced compliance. 
 
-Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
+**Enter:** the Tiger Parent! Essentially a speech-enabled habit builder in the form factor of a **picture frame**. It is relentless in keeping you accountable, and comes with a variety of classic tiger parenting phrases such as: "When I was your age...", "After all I have done for you", etc. You can even maximize its effect by putting a picture of someone who really motivates you. The characterization of the VA as a tiger parent opens up interesting design choices, such as never giving up when asking you to complete your task, sweetly understanding what you need, like cut fruit, through contextual clues, requiring you to formulate a valid reason for postponing a task, and giving you encouragement when you need it.
 
-\*\***Please describe and document your process.**\*\*
+As a team, we came up with 3 different scenarios of where the tiger parent can be useful, and envision the different types of dialogue/responses it can provide depending on context.
+
+**SCENARIO 1: WAKING YOU UP**
+
+
+![IMG_5228](https://user-images.githubusercontent.com/18011694/135945336-2e62ccec-aa22-4143-a4d5-7efe3f905f10.JPG)
+
+
+**SCENARIO 2: REMINDING YOU TO DO YOUR ASSIGNMENTS**
+
+
+![IMG_5230](https://user-images.githubusercontent.com/18011694/135945351-dacb98fa-1d19-4c05-b1c0-f63ecb38ad06.JPG)
+
+
+**SCENARIO 3: TELLING YOU TO GO TO SLEEP**
+
+
+![IMG_5229](https://user-images.githubusercontent.com/18011694/135945342-9786dfdd-21b4-4356-8a53-95a3d1061005.JPG)
+
+
+**The tiger parent's key features are:**
+1. Relentless in ensuring you do what you said you would do (i.e. will not stop until you specify when you want to delay the task to)
+2. Reminding you of motivational phrases when you're unmotivated
+3. Rewards you when you do a good job with verbal affirmation
+4. When you feel down, it will switch modes and be encouraging
+
+**Below is the initial ideation of potential speech-enabled devices**
+![Initial Ideation](https://user-images.githubusercontent.com/18011694/135939506-55067667-8617-4b0d-849f-72a4e1362914.JPG)
 
 ### Acting out the dialogue
 
