@@ -139,7 +139,22 @@ As a team, we came up with 3 different scenarios of where the tiger parent can b
 
 Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing.  Please record this interaction (for example, using Zoom's record feature).
 
-\*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
+I partnered with Shengnan Han for this section. The dialogue was similar to what we scripted, but the live dialogue also opened up new responses and prompts. For example, when we simulated the waking up situation, Shengnan asked for a 60 minute extention, but the class will start before that. This was actually an important point for the tiger parent to consider and ensure that the extension was feasible. It also elicited more common phrases that the tiger parent could potentially say. 
+
+**Videos:**
+
+
+https://user-images.githubusercontent.com/18011694/135946498-abf13bf0-0ea3-42f9-9805-48ad2917e3fe.mp4
+
+
+https://user-images.githubusercontent.com/18011694/135946743-0b449c8f-aa6c-47cb-9ca7-1bc2c15078d0.mp4
+
+
+
+https://user-images.githubusercontent.com/18011694/135947041-212f7ff0-0bfe-405f-bf26-5d1510a02cdc.mp4
+
+
+
 
 ### Wizarding with the Pi (optional)
 In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!
