@@ -168,8 +168,23 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 ## Prep for Part 2
 
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
+   - How the system will figure out what the user needs it to do
+   - Customizability of the voice so its tailored to the user
+   - Wording and phrases related to the culture of the person
+   - How the system will react to a change in the environment, e.g. friends sleeping over or if it's a holiday 
+   - How much of the nagging will make the user more stressed than before? Can we set settings? How do we balance between pushing the user whilst not pushing too hard? --> perhaps use peer accountability where you assign a friend to validate changes you want to make to the device like asking it to stop reminding you to do something
+
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
+   - Reducing dependence on speech as an output modality by including non-verbal cues: 
+      - Giving "the glare" by adding a laser to continuously follow the user's hand if they aren't responding
+   - Adding light to show if the system is listening, processing, or off
+   - Motion to show if its listening, processing or off
+   - Motion for it to point
+   - Facial expressions! To show its responses. For example if the user successfully does something, it will show a happy animation
+   - Motion to just nudge the user to do their work, to call for attention, to express its "emotions"
+
 3. Make a new storyboard, diagram and/or script based on these reflections.
+   - 
 
 ## Prototype your system
 
