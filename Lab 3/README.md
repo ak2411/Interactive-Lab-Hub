@@ -147,10 +147,7 @@ I partnered with Shengnan Han for this section. The dialogue was similar to what
 
 https://user-images.githubusercontent.com/18011694/135946498-abf13bf0-0ea3-42f9-9805-48ad2917e3fe.mp4
 
-
 https://user-images.githubusercontent.com/18011694/135946743-0b449c8f-aa6c-47cb-9ca7-1bc2c15078d0.mp4
-
-
 
 https://user-images.githubusercontent.com/18011694/135947041-212f7ff0-0bfe-405f-bf26-5d1510a02cdc.mp4
 
@@ -183,39 +180,11 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
    - Motion for it to point
    - Facial expressions! To show its responses. For example if the user successfully does something, it will show a happy animation
    - Motion to just nudge the user to do their work, to call for attention, to express its "emotions"
+   - How can the user signify that they are not in the mood or situation to talk? e.g. make the frame face the table
 
 3. Make a new storyboard, diagram and/or script based on these reflections.
    - 
 
-## Prototype your system
-
-The system should:
-* use the Raspberry Pi 
-* use one or more sensors
-* require participants to speak to it. 
-
-*Document how the system works*
-
-*Include videos or screencaptures of both the system and the controller.*
-
-## Test the system
-Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
-
-Answer the following:
-
-### What worked well about the system and what didn't?
-\*\**your answer here*\*\*
-
-### What worked well about the controller and what didn't?
-
-\*\**your answer here*\*\*
-
-### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
-
-\*\**your answer here*\*\*
-
-
-### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
-
-\*\**your answer here*\*\*
-
+**Documentation for everything below this section is available here: **
+https://docs.google.com/document/d/13te2bYmrv20mQIsHGpzNyAyvMewzI6RiqODtk2XfpIs/edit?usp=sharing
+Worked with teammates Evan Lin and Grace Le.
