@@ -185,6 +185,7 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 3. Make a new storyboard, diagram and/or script based on these reflections.
    - 
 
-**Documentation for everything below this section is available here: **
+**Documentation for everything below this section is available here:**
+
 https://docs.google.com/document/d/13te2bYmrv20mQIsHGpzNyAyvMewzI6RiqODtk2XfpIs/edit?usp=sharing
 Worked with teammates Evan Lin and Grace Le.
