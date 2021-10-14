@@ -183,7 +183,8 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
    - How can the user signify that they are not in the mood or situation to talk? e.g. make the frame face the table
 
 3. Make a new storyboard, diagram and/or script based on these reflections.
-   - 
+![IMG_5330 2](https://user-images.githubusercontent.com/18011694/137243430-69914100-4637-4965-af17-fbffef974938.JPG)
+
 
 **Documentation for everything below this section is available here:**
 
