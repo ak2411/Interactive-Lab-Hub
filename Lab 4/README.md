@@ -173,8 +173,8 @@ You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_VL53L
 
 Usually, sensors need to positioned in specific locations or orientations to make them useful for their application. Now that you've tried a bunch of the sensors, pick one that you would like to use, and an application where you use the output of that sensor for an interaction. For example, you can use a distance sensor to measure someone's height if you position it overhead and get them to stand under it.
 
-![IMG_5332](https://user-images.githubusercontent.com/18011694/137600235-bb85b7f5-40de-4f8d-9a74-da7716e59a46.JPG)
 ![IMG_5333](https://user-images.githubusercontent.com/18011694/137600236-ee0f207e-070b-4288-87a1-b71c7e30a81c.JPG)
+![IMG_5332](https://user-images.githubusercontent.com/18011694/137600926-361a0d18-7feb-4c62-bb47-f55df8410524.JPG)
 
 - How small can I make the device?
 - Are there other form factors to make it more ergonomic?
@@ -231,8 +231,6 @@ Think about how you want to present the information about what your sensor is se
 I decided to go with the camera metaphor with just a button at the top. This ensures that the user can bring this device everywhere with them, interact with just one hand, and its intuitive since it follows a design many know.
 
 Build a cardbord prototype of your design.
-
-**\*\*\*Document your rough prototype.\*\*\***
 
 
 LAB PART 2
