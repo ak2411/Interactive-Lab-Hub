@@ -173,12 +173,15 @@ You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_VL53L
 
 Usually, sensors need to positioned in specific locations or orientations to make them useful for their application. Now that you've tried a bunch of the sensors, pick one that you would like to use, and an application where you use the output of that sensor for an interaction. For example, you can use a distance sensor to measure someone's height if you position it overhead and get them to stand under it.
 
-**\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
+![IMG_5332](https://user-images.githubusercontent.com/18011694/137600235-bb85b7f5-40de-4f8d-9a74-da7716e59a46.JPG)
+![IMG_5333](https://user-images.githubusercontent.com/18011694/137600236-ee0f207e-070b-4288-87a1-b71c7e30a81c.JPG)
 
-**\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+- How small can I make the device?
+- Are there other form factors to make it more ergonomic?
+- How close or far does the object need to be for the sensor to detect it properly?
+- how can I show a monitor, button, and sensor together?
 
-**\*\*\*Pick one of these designs to prototype.\*\*\***
-
+Although I initially picked the joystick, I think it would be interesting to experiment and build the art critic idea with a proximity sensor.
 
 ### Part D
 ### Physical considerations for displaying information and housing parts
@@ -217,14 +220,15 @@ Here is an example:
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2020Fall/images/horoscope.png?raw=true"  width="250"/>
 
 Think about how you want to present the information about what your sensor is sensing! Design a paper display for your project that communicates the state of the Pi and a sensor. Ideally you should design it so that you can slide the Pi out to work on the circuit or programming, and then slide it back in and reattach a few wires to be back in operation.
- 
-**\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
-**\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
-**\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
+ ![IMG_5335](https://user-images.githubusercontent.com/18011694/137600805-30feed43-9f1c-4253-b514-5102c39c0395.JPG)
 
-**\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
+- How can I ensure it can be held with 1 hand?
+- How to ensure the buttons and display dont get pushed in if interacted with
+
+
+I decided to go with the camera metaphor with just a button at the top. This ensures that the user can bring this device everywhere with them, interact with just one hand, and its intuitive since it follows a design many know.
 
 Build a cardbord prototype of your design.
 
