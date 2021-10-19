@@ -233,6 +233,9 @@ I decided to go with the camera metaphor with just a button at the top. This ens
 Build a cardbord prototype of your design.
 
 
+![Prototype](https://user-images.githubusercontent.com/18011694/137830981-cc57476f-e654-45f6-bddb-3c5d0428244c.png)
+
+
 LAB PART 2
 
 ### Part 2
