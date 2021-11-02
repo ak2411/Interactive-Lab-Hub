@@ -53,7 +53,8 @@ Now, you might wonder what exactly is a `.sh` file? Typically, a `.sh` file is a
 
 You can also play audio files directly with `aplay filename`. Try typing `aplay lookdave.wav`.
 
-\*\***Write your own shell file to use your favorite of these TTS engines to have your Pi greet you by name.**\*\*
+shell file: **rememberMe.sh**
+
 (This shell file should be saved to your own repo for this lab.)
 
 Bonus: If this topic is very exciting to you, you can try out this new TTS system we recently learned about: https://github.com/rhasspy/larynx
@@ -66,7 +67,7 @@ In particular, look at `test_words.py` and make sure you understand how the voca
 
 One thing you might need to pay attention to is the audio input setting of Pi. Since you are plugging the USB cable of your webcam to your Pi at the same time to act as speaker, the default input might be set to the webcam microphone, which will not be working for recording.
 
-\*\***Write your own shell file that verbally asks for a numerical based input (such as a phone number, zipcode, number of pets, etc) and records the answer the respondent provides.**\*\*
+**say_number.sh**
 
 Bonus Activity:
 
@@ -146,10 +147,7 @@ I partnered with Shengnan Han for this section. The dialogue was similar to what
 
 https://user-images.githubusercontent.com/18011694/135946498-abf13bf0-0ea3-42f9-9805-48ad2917e3fe.mp4
 
-
 https://user-images.githubusercontent.com/18011694/135946743-0b449c8f-aa6c-47cb-9ca7-1bc2c15078d0.mp4
-
-
 
 https://user-images.githubusercontent.com/18011694/135947041-212f7ff0-0bfe-405f-bf26-5d1510a02cdc.mp4
 
@@ -168,38 +166,27 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 ## Prep for Part 2
 
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
+   - How the system will figure out what the user needs it to do
+   - Customizability of the voice so its tailored to the user
+   - Wording and phrases related to the culture of the person
+   - How the system will react to a change in the environment, e.g. friends sleeping over or if it's a holiday 
+   - How much of the nagging will make the user more stressed than before? Can we set settings? How do we balance between pushing the user whilst not pushing too hard? --> perhaps use peer accountability where you assign a friend to validate changes you want to make to the device like asking it to stop reminding you to do something
+
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
+   - Reducing dependence on speech as an output modality by including non-verbal cues: 
+      - Giving "the glare" by adding a laser to continuously follow the user's hand if they aren't responding
+   - Adding light to show if the system is listening, processing, or off
+   - Motion to show if its listening, processing or off
+   - Motion for it to point
+   - Facial expressions! To show its responses. For example if the user successfully does something, it will show a happy animation
+   - Motion to just nudge the user to do their work, to call for attention, to express its "emotions"
+   - How can the user signify that they are not in the mood or situation to talk? e.g. make the frame face the table
+
 3. Make a new storyboard, diagram and/or script based on these reflections.
-
-## Prototype your system
-
-The system should:
-* use the Raspberry Pi 
-* use one or more sensors
-* require participants to speak to it. 
-
-*Document how the system works*
-
-*Include videos or screencaptures of both the system and the controller.*
-
-## Test the system
-Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
-
-Answer the following:
-
-### What worked well about the system and what didn't?
-\*\**your answer here*\*\*
-
-### What worked well about the controller and what didn't?
-
-\*\**your answer here*\*\*
-
-### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
-
-\*\**your answer here*\*\*
+![IMG_5330 2](https://user-images.githubusercontent.com/18011694/137243430-69914100-4637-4965-af17-fbffef974938.JPG)
 
 
-### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
+**Documentation for everything below this section is available here:**
 
-\*\**your answer here*\*\*
-
+https://docs.google.com/document/d/13te2bYmrv20mQIsHGpzNyAyvMewzI6RiqODtk2XfpIs/edit?usp=sharing
+Worked with teammates Evan Lin and Grace Le.
