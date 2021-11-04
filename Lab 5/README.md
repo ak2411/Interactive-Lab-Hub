@@ -245,6 +245,16 @@ This can be as simple as the boat detector earlier.
 Try out different interaction outputs and inputs.
 
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
+Ideas for the hand pose detector - 
+object: phone
+- can use different poses to assign shortcuts for how you want to control the iphone (e.g. with ITTT)
+- e.g. we can make a fist and shake the hand to signify setting the alarm
+- use hands to cover the camera and uncover to mute/unmute the phone
+- we can also use a unique hand pose like touching the ring finger and index finger with the thumb to turn the hand pose detector on or off to avoid accidental detections
+- hand open and close to call the phone with wheels to you
+- a hand menu for interactions where you don't want to touch any buttons
+
+
 
 ### Part C
 ### Test the interaction prototype
@@ -276,6 +286,7 @@ During the lecture, we mentioned questions to help characterize a material:
 * How does X feel?
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
+
 
 ### Part 2.
 
