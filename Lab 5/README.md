@@ -168,8 +168,6 @@ Each of the installs will take a while, please be patient. After successfully in
 
 Try the two main features of this script: 1) pinching for percentage control, and 2) "[Quiet Coyote](https://www.youtube.com/watch?v=qsKlNVpY7zg)" for instant percentage setting. Notice how this example uses hardcoded positions and relates those positions with a desired set of events, in `hand_pose.py` lines 48-53. 
 
-**\*\*\*Consider how you might use this position based approach to create an interaction, and write how you might use it on either face, hand or body pose tracking.\*\*\***
-
 
 ![Screen Shot 2021-11-01 at 8 29 22 PM](https://user-images.githubusercontent.com/18011694/139778243-87330617-331b-4240-9275-7ee8ec0e10c0.png)
 ![Screen Shot 2021-11-01 at 8 28 15 PM](https://user-images.githubusercontent.com/18011694/139778250-bf0e00f9-98d9-4df4-9f58-db7610a682ea.png)
@@ -244,7 +242,10 @@ Pick one of the models you have tried, pick a class of objects, and experiment w
 This can be as simple as the boat detector earlier.
 Try out different interaction outputs and inputs.
 
-**\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
+
+![IMG_5463](https://user-images.githubusercontent.com/18011694/140860887-4b4ee508-e14a-4865-8328-d43bf2fc84d1.JPG)
+
+
 Ideas for the hand pose detector - 
 object: phone
 - can use different poses to assign shortcuts for how you want to control the iphone (e.g. with ITTT)
@@ -254,7 +255,7 @@ object: phone
 - hand open and close to call the phone with wheels to you
 - a hand menu for interactions where you don't want to touch any buttons
 
-
+Final idea: Hand menu - 4 options from index finger to pinky finger. When that finger touches the thumb, it means we are selecting that option. This can be used, for e.g., at atm machines when we don't want to touch their buttons.
 
 ### Part C
 ### Test the interaction prototype
