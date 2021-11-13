@@ -100,6 +100,40 @@ pi@ixe00:~/openCV-examples/object-detection $ python detect.py
 
 **\*\*\*Try each of the following four examples in the `openCV-examples`, include screenshots of your use and write about one design for each example that might work based on the individual benefits to each algorithm.\*\*\***
 
+**Contours**
+
+
+![Screen Shot 2021-11-01 at 8 02 06 PM](https://user-images.githubusercontent.com/18011694/139773907-bfde20b5-dd33-457a-88c6-627f8e3263a0.png)
+
+
+Since contours detects and defines outlines of a scene, it works best when it has to track large changes instead of detailed ones. It can be used to separate landscapes into sky, land, and sea to perhaps help a user take properly oriented photos. It could also be helpful for guiding the user to take pictures that follow the rule of thirds. It can also be placed as your smart door camera and let you know if something at your doorstep changes, like if a person is there or if a package arrived. Its a fast and efficient way to detect changes and notify the user. 
+
+
+**Face Detection**
+
+
+![Screen Shot 2021-11-01 at 8 04 43 PM](https://user-images.githubusercontent.com/18011694/139773927-8317ea20-57ea-4f9a-b418-e837f5b46271.png)
+
+
+Face detection has many use cases, such as using it to determine when to turn a device on/off. It can also be used to count the number of people in a reasonably large room or restaurant. Something that I think makes it interesting is its false detection of faces. This can be used to identify and make cool art - for example, a user can wear a camera around with the face detection algorithm and it takes a picture everytime a face is detected. We then extract just the incorrect detections and try to make sense of the image (since there must be a reason why it detected eyes + a mouth). Another idea could be to use it in tandem with a face recognition system to map the number of people that enter/leave a building as well as their travel patterns (though of course its a huge violation of privacy)
+
+**Flow Detection**
+
+
+![Screen Shot 2021-11-01 at 8 06 51 PM](https://user-images.githubusercontent.com/18011694/139773957-f87760a0-d5ee-49a4-a846-65e077111668.png)
+
+
+If left to observe trees outside, it can be used to determine the strength of the winds outside since it detects flow direction and the speed can be calculated from it. 
+
+**Object Detection**
+
+
+![Screen Shot 2021-11-01 at 8 08 55 PM](https://user-images.githubusercontent.com/18011694/139773976-a390ac9d-d4dc-4d7c-9d94-3b5b5c6bc1b1.png)
+
+
+Object detection can also be used for many things. Some ideas include leaving a camera facing an area where you leave your essentials. When you leave the door and it detects that you have not taken all your essentials, then it will notify you. It can also be used in the fridge to potentially let you know what groceries you have and what you need to buy. 
+
+
 #### MediaPipe
 
 A more recent open source and efficient method of extracting information from video streams comes out of Google's [MediaPipe](https://mediapipe.dev/), which offers state of the art face, face mesh, hand pose, and body pose detection.
@@ -134,7 +168,12 @@ Each of the installs will take a while, please be patient. After successfully in
 
 Try the two main features of this script: 1) pinching for percentage control, and 2) "[Quiet Coyote](https://www.youtube.com/watch?v=qsKlNVpY7zg)" for instant percentage setting. Notice how this example uses hardcoded positions and relates those positions with a desired set of events, in `hand_pose.py` lines 48-53. 
 
-**\*\*\*Consider how you might use this position based approach to create an interaction, and write how you might use it on either face, hand or body pose tracking.\*\*\***
+
+![Screen Shot 2021-11-01 at 8 29 22 PM](https://user-images.githubusercontent.com/18011694/139778243-87330617-331b-4240-9275-7ee8ec0e10c0.png)
+![Screen Shot 2021-11-01 at 8 28 15 PM](https://user-images.githubusercontent.com/18011694/139778250-bf0e00f9-98d9-4df4-9f58-db7610a682ea.png)
+
+
+Isomorphic interactions are what come to mind for me - using what we normally do with analog tasks as metaphors for pose tracking. For example, we can clear the contents in the device by doing a wave action. We can also scroll or move to the next scene by doing a scroll hand gesture or a flip gesture. Something that would be interesting is also to use the hands or body's landmarks as menu options. With hands, for example, we can have 4 different options mapped to each finger and when the thumb touches a finger that option gets chosen. If the thumb touches the palm it can perhaps change the options on the rest of the fingers. 
 
 (You might also consider how this notion of percentage control with hand tracking might be used in some of the physical UI you may have experimented with in the last lab, for instance in controlling a servo or rotary encoder.)
 
@@ -173,6 +212,12 @@ This might take a while to get fully installed. After installation, connect your
 **\*\*\*Whether you make your own model or not, include screenshots of your use of Teachable Machines, and write how you might use this to create your own classifier. Include what different affordances this method brings, compared to the OpenCV or MediaPipe options.\*\*\***
 
 
+![Screen Shot 2021-11-01 at 8 54 20 PM](https://user-images.githubusercontent.com/18011694/139778140-07023aeb-2c9f-427f-b363-e7bfa079aedc.png)
+
+
+If I need to make a classifier that classifies any input into two options, teachable machines makes it easy for me to feed it data and train it. Since it runs on the browser, we can also easily use it on any device. It is more accessible as well.
+
+
 *Don't forget to run ```deactivate``` to end the Teachable Machines demo, and to reactivate with ```source tmachine/bin/activate``` when you want to use it again.*
 
 
@@ -197,7 +242,20 @@ Pick one of the models you have tried, pick a class of objects, and experiment w
 This can be as simple as the boat detector earlier.
 Try out different interaction outputs and inputs.
 
-**\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
+
+![IMG_5463](https://user-images.githubusercontent.com/18011694/140860887-4b4ee508-e14a-4865-8328-d43bf2fc84d1.JPG)
+
+
+Ideas for the hand pose detector - 
+object: phone
+- can use different poses to assign shortcuts for how you want to control the iphone (e.g. with ITTT)
+- e.g. we can make a fist and shake the hand to signify setting the alarm
+- use hands to cover the camera and uncover to mute/unmute the phone
+- we can also use a unique hand pose like touching the ring finger and index finger with the thumb to turn the hand pose detector on or off to avoid accidental detections
+- hand open and close to call the phone with wheels to you
+- a hand menu for interactions where you don't want to touch any buttons
+
+Final idea: Hand menu - 4 options from index finger to pinky finger. When that finger touches the thumb, it means we are selecting that option. This can be used, for e.g., at atm machines when we don't want to touch their buttons.
 
 ### Part C
 ### Test the interaction prototype
@@ -229,6 +287,7 @@ During the lecture, we mentioned questions to help characterize a material:
 * How does X feel?
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
+
 
 ### Part 2.
 

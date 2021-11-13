@@ -279,3 +279,39 @@ Document all the prototypes and iterations you have designed and worked on! Agai
 * "Works like": shows what the device can do
 * "Acts like": shows how a person would interact with the device
 
+The key problem with the opinionator/art critic is that the technology is not robust enough for it to work well. At best, it becomes a characterized version of a magic 8-ball, and at worst it is no longer fun. However, I still liked the interaction idea of "taking a picture" to capture and decide on something. Ideation questions included:
+1. Can this be used to represent a simpler version of what we normally do in real life?
+2. Could it instead be a mini communicator that pings your closest friends/family for their opinions on something? If so, how can it help you share your opinions with your friends/family when they need it?
+3. What if the internet decides? Maybe after 5 minutes we can default back to the sensor?
+
+
+![IMG_5454 1 (1)](https://user-images.githubusercontent.com/18011694/140858015-00279033-14d2-42f4-9b9d-fe3cf84357af.png)
+
+
+### Final Idea: The memory machine
+#### What is it?
+* A device that lets users take pictures of things they need an opinion of (e.g. should I get this book? what do you think about this piece of art? should I try watching a movie?) 
+* This picture gets sent to a social media app where only a user's specified close friends and family get notified. They can then reply with a yes/no, and leave a voice recording to further elaborate why/just to say hi
+* The user can see all of these additional comments get updated in real time in a small yes/no visualization on the display
+* The user can also use the rotary encoder to slide a pointer from left to right, where each turn plays a voice message. Continuously turning the rotary encoder would mean going through all the voice messages that the user's friends and family left behind until there is none left
+* To revisit comments from your friends and family, the user needs to retake the picture of that item.
+
+#### Why?
+* Staying connected is about knowing both the big things that are happening in your life, and also the little things
+* Mimic how memories work - we are reminded of certain moments when we observe a change in weather, or listen to a certain song, or see a certain object. Similarly, this memory machine only recalls the voice notes and voting from a person's close friends and family when the user takes a picture of that same object again. This is a natural way for us to decide what information to show the user, and I find the idea of ephemeral moments interesting to capture using a device.
+
+**Looks like:**
+
+![lookslike (1)](https://user-images.githubusercontent.com/18011694/140857971-599985df-829a-4496-bfe8-2a4439681412.png)
+
+currently, friends and family will be able to vote and give you an opinion of the item through an app on their phone. In future iterations, it may be interesting to keep all interactions into one device, for e.g. we can use the encoder as an input for the user to specify whether they like or dislike the item their friends took a picture of. The reason why its an app right now is so that it's easier to display the pictures their friends took.
+
+**Works like:**
+
+You can only view their comments and a summary of their thoughts on your memory machine, and these comments will only appear when you re-take a picture of the item. The system theoretically will use feature mapping to identify whether the item is new or has been taken before. 
+
+**Acts like:**
+
+
+https://user-images.githubusercontent.com/18011694/140860147-4897be4e-8f4c-4f10-8787-89dc393544a6.mp4
+
