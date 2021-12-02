@@ -4,6 +4,21 @@ import pyaudio
 import wave
 import os
 import time
+from os import walk
+from pathlib import Path
+# ##################
+import numpy as np
+import cv2
+import sys
+import imutils
+from pyzbar import pyzbar
+import argparse
+import datetime
+import imutils
+import time
+import cv2
+
+# #################
 
 seesaw = seesaw.Seesaw(board.I2C(), addr=0x36)
 
@@ -30,13 +45,55 @@ frames = []
 stream = None
 
 playbackCtr = 0
-recordings = ["test1.wav", "recording.wav"]
+getRecordings = True
+recordings = []
+
+# ######################################
+img=None
+currQRCode = None
+webCam = False
+print("hi")
+if(len(sys.argv)>1):
+   try:
+      print("I'll try to read your image");
+      img = cv2.imread(sys.argv[1])
+      if img is None:
+         print("Failed to load image file:", sys.argv[1])
+   except:
+      print("Failed to load the image are you sure that:", sys.argv[1],"is a path to an image?")
+else:
+   try:
+      print("Trying to open the Webcam.")
+      cap = cv2.VideoCapture(0)
+      if cap is None or not cap.isOpened():
+         raise("No camera")
+      webCam = True
+
+   except:
+      print("Cant't open webcam")
+print("Is Webcam running? "+ str(webCam))
+# ######################################
+
+def GetRecordings(dir):
+    global recordings
+    exist = Path("./localfiles/" + dir).is_dir()
+    if exist:
+        cmd = os.popen("rm -r ./localfiles/" + dir)
+        cmd.read()
+    print("Downloading")
+    cmd = os.popen("sshpass -p 'ch956@cornell.edu' scp -r pi@10.56.252.86:~/myfiles/" + dir + " ./localfiles/")
+    cmd.read()
+    print("Finished downloading")
+    recordings = next(walk("./localfiles/"+currQRCode), (None, None, []))[2]
+    print(recordings)
 
 def PlayRecording(direction):
     global playbackCtr
     recordingLen = len(recordings)
+    if recordingLen <= 0:
+        return
     playbackCtr = (playbackCtr+direction)%recordingLen
-    os.system('aplay '+recordings[playbackCtr])
+    os.system('aplay '+ './localfiles/' + currQRCode + '/' + recordings[playbackCtr])
     # if direction > 0:
     #     print("next")
     # elif direction < 0:
@@ -57,7 +114,8 @@ def StopRecording():
     stream.close()
     audio.terminate()
     print("stopped")
-    wavefile = wave.open(time.strftime("%Y%m%d-%H%M%S")+".wav",'wb')
+    filename = time.strftime("%Y%m%d-%H%M%S")+".wav"
+    wavefile = wave.open(filename,'wb')
     wavefile.setnchannels(chans)
     wavefile.setsampwidth(audio.get_sample_size(form_1))
     wavefile.setframerate(samp_rate)
@@ -65,8 +123,38 @@ def StopRecording():
     wavefile.close()
     audio = pyaudio.PyAudio() # create pyaudio instantiation
     stream = None
+    while not os.path.isfile(filename):
+        print("not yet")
+        continue
+    SendFile(filename, currQRCode)
+
+def SendFile(filename, dir):
+    print("New file created: "+filename)
+    cmd = os.popen("sshpass -p 'ch956@cornell.edu' scp ./" + filename + " pi@10.56.252.86:~/myfiles/" + dir)
+    cmd.read()
+
+def ReadQRCode():
+    global currQRCode
+    # if there is a QR code, return true
+    if webCam:
+        ret, img = cap.read()
+        frame = imutils.resize(img, width=400)
+        barcodes = pyzbar.decode(frame)
+        for barcode in barcodes:
+            (x, y, w, h) = barcode.rect
+            cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
+            barcodeData = barcode.data.decode("utf-8")
+            barcodeType = barcode.type
+            text = "{}".format(barcodeData)
+            if text != currQRCode:
+                currQRCode = text
+                print(currQRCode)
+                return True
+    return False
 
 while True:
+    if ReadQRCode():
+        GetRecordings(currQRCode)
     position = -encoder.position
     if not button.value and not isPressing:
         isPressing = True
@@ -78,6 +166,8 @@ while True:
         isPressing = False
         StopRecording()
     elif position != last_position:
+        print(position)
         PlayRecording(position-last_position)
         last_position = position
 
+cv2.destroyAllWindows()
